@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-hdr">
-      <a class="page-hdr__logo"><img class="page-hdr__logo-img" src="#" width="100" height="85" alt="Символика города"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <button class="main-nav__close" type="button">Закрыть меню</button>
@@ -17,73 +18,83 @@
           <li class="menu-lst__item"><a href="#">HTML Academy</a></li>
         </ul>
       </nav>
+      <a class="page-hdr__logo"><img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города"></a>
+      <div class="page-hdr__intro"></div>
     </header>
     <main class="page-main">
       <article class="advantages">
-        <h1 class="advantages__headline">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="advantages__headline">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <figure class="advantages__fgr figure">
-          <img class="figure__img" src="https://picsum.photos/320/260/?random" width="320" height="260" alt="Иллюстрация">
+        <figure class="advantages__figure figure">
           <figcaption class="figure__content">
-            <span class="figure__unit">№1</span>
             <h2 class="figure__headline">Настоящий городок</h2>
-            <p class="figure__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <span class="figure__unit">– №1 –</span>
+            <p class="figure__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </figcaption>
+          <img class="figure__img" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Иллюстрация">
         </figure>
         <section class="features">
-          <h2 class="features__headline visually-hidden"></h2>
-          <ul class="features__lst features-lst">
-            <li class="features-lst__item features-lst__item--housing">
-              <h3 class="features__title">Жилье</h3>
-              <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="features-lst__item features-lst__item--souvenir">
-              <h3 class="features__title">Сувениры</h3>
-              <p class="features__text">Не только китайского, но и местного производства!</p>
-            </li>
-            <li class="features-lst__item features-lst__item--food">
-              <h3 class="features__title">Еда</h3>
-              <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-          </ul>
+          <div class="features__wrapper">
+            <h2 class="features__headline visually-hidden"></h2>
+            <ul class="features__lst features-lst">
+              <li class="features-lst__item features-lst__item--housing">
+                <h3 class="features__title">Жилье</h3>
+                <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="features-lst__item features-lst__item--souvenir">
+                <h3 class="features__title">Сувениры</h3>
+                <p class="features__text">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="features-lst__item features-lst__item--food">
+                <h3 class="features__title">Еда</h3>
+                <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </div>
         </section>
-        <figure class="advantages__fgr figure">
-          <img class="figure__img" src="https://picsum.photos/320/260/?random" width="320" height="260" alt="Иллюстрация">
-          <figcaption class="figure__content">
-            <span class="figure__unit">№2</span>
-            <h2 class="figure__headline">Там есть Мост дьявола</h2>
-            <p class="figure__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </figcaption>
+        <figure class="advantages__figure figure">
+          <figcaption class="figure__content figure__content--option">
+              <h2 class="figure__headline">Там есть Мост дьявола</h2>
+              <span class="figure__unit">– №2 –</span>
+              <p class="figure__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </figcaption>
+          <img class="figure__img" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Иллюстрация">
         </figure>
         <section class="remain">
-          <ul class="remain__lst remain-lst">
-            <li class="remain-lst__item">
-              <span class="remain__unit">№3</span>
-              <h2 class="remain__title">Небольшая площадь</h2>
-              <p class="remain__text">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="remain-lst__item">
-              <span class="remain__unit">№4</span>
-              <h2 class="remain__title">Красивая дорога</h2>
-              <p class="text__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="remain-lst__item">
-              <span class="remain__unit">№5</span>
-              <h2 class="remain__title">Мало туристов</h2>
-              <p class="remain__text">Большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </ul>
+          <div class="remain__wrapper">
+            <ul class="remain__lst remain-lst">
+              <li class="remain-lst__item">
+                <h2 class="remain__title">Небольшая площадь</h2>
+                <span class="remain__unit">– №3 –</span>
+                <p class="remain__text">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="remain-lst__item">
+                <h2 class="remain__title">Красивая дорога</h2>
+                <span class="remain__unit">– №4 –</span>
+                <p class="remain__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="remain-lst__item">
+                <h2 class="remain__title">Мало туристов</h2>
+                <span class="remain__unit">– №5 –</span>
+                <p class="remain__text">Большинство едет в гранд каньон и толпится там</p>
+              </li>
+            </ul>
+          </div>
         </section>
       </article>
     </main>
     <footer class="page-ftr">
-      <span class="page-ftr__link">#visitsedona</span>
-      <ul class="page-ftr__social social-lst">
-        <li class="social-lst__item social-lst__item--twt"><a href="#" target="_blank" aria-label="Мы в Твиттере">#</a></li>
-        <li class="social-lst__item social-lst__item--fb"><a href="#" target="_blank" aria-label="Мы в Фейсбуке">#</a></li>
-        <li class="social-lst__item social-lst__item--ytb"><a href="#" target="_blank" aria-label="Мы в Ютубе">#</a></li>
-      </ul>
-      <a class="page-ftr__academy" href="https://htmlacademy.ru">Разработано<img class="page-ftr__academy-logo" src="#" width="115" height="41" alt="Логотип HTML Academy"></a>
+      <div class="page-ftr__wrapper">
+        <span class="page-ftr__link">#visitsedona</span>
+        <ul class="page-ftr__social social-lst">
+          <li class="social-lst__item social-lst__item--twt"><a href="#" target="_blank" aria-label="Мы в Твиттере">#</a></li>
+          <li class="social-lst__item social-lst__item--fb"><a href="#" target="_blank" aria-label="Мы в Фейсбуке">#</a></li>
+          <li class="social-lst__item social-lst__item--ytb"><a href="#" target="_blank" aria-label="Мы в Ютубе">#</a></li>
+        </ul>
+        <p class="page-ftr__academy">Разработано
+          <a href="https://htmlacademy.ru" aria-label="HTML Academy"><img class="page-ftr__academy-logo" src="img/logo-htmlacademy.svg" width="30" height="35" alt="Логотип HTML Academy"></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
