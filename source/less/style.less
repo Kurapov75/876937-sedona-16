@@ -1,7 +1,6 @@
 @import "page-hdr";
 @import "page-main";
 @import "page-ftr";
-@import "advantages";
 @import "figure";
 @import "features";
 @import "remain";
@@ -30,6 +29,7 @@
 @bg_color-2: #eee;
 @font_size: 14px;
 @font_bold: "PT Sans Bold";
+@line-height: 1.6;
 
 body {
   width: 320px;
@@ -37,5 +37,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: @font_size;
+  line-height: @line-height;
 }
 
+.title {
+  font-family: @font_bold;
+  font-size: @font_size + 4px;
+  line-height: @line-height - 0.3;
+}
