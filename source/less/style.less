@@ -30,6 +30,8 @@
 @font_size: 14px;
 @font_bold: "PT Sans Bold";
 @line-height: 1.6;
+@tablet-width: 768px;
+@desktop-width: 1200px;
 
 body {
   width: 320px;
@@ -39,9 +41,24 @@ body {
   font-size: @font_size;
   line-height: @line-height;
 }
-
 .title {
   font-family: @font_bold;
   font-size: @font_size + 4px;
   line-height: @line-height - 0.3;
+}
+.out {
+  outline: 1px solid red;
+}
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+  }
+  .title {
+    font-size: @font_size + 8px;
+  }
+}
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+  }
 }

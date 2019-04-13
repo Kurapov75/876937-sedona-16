@@ -16,12 +16,27 @@
 .page-main__headline {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
-
 .page-main__text {
   width: 250px;
   margin: 0 auto;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   line-height: @line-height + 0.3;
+}
+@media (min-width: @tablet-width) {
+  .page-main__headline {
+    width: 460px;
+  }
+  .page-main__text {
+    width: auto;
+  }
+  .page-main__intro {
+    height: 520px;
+    margin-bottom: 50px;
+    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat center bottom,
+                url(../img/text-sedona-index.svg) no-repeat center 90px,
+                url(../img/bg-back-tablet@1x.jpg) no-repeat center;
+    background-size: 100%, 58%, cover;
+  }
 }

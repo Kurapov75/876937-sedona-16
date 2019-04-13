@@ -1,4 +1,6 @@
 .remain-lst {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,4 +20,27 @@
   width: 250px;
   margin: 0 auto;
   margin-top: 15px;
+}
+@media (min-width: @tablet-width) {
+  .remain-lst {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .remain-lst__item {
+    width: 255px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: none;
+  }
+  .remain__title {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .remain__text {
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }

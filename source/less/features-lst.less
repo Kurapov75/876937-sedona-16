@@ -1,4 +1,6 @@
 .features-lst {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-left: 50px;
@@ -7,4 +9,27 @@
 }
 .features-lst__item {
   padding-bottom: 5px;
+}
+@media (min-width: @tablet-width) {
+  .features-lst {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+  .features-lst__item {
+    width: 255px;
+    padding-top: 75px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .features__text {
+    width: 165px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .features-lst__item--souvenir {
+    order: 3;
+  }
 }
