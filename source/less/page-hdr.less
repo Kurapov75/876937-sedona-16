@@ -1,18 +1,22 @@
-.page-hdr__logo {
+.page-hdr__logo-img {
   position: relative;
   top: 30px;
 }
-.page-hdr__intro {
-  height: 390px;
-  background: url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom,
-              url(../img/text-sedona-index.svg) no-repeat center 90px,
-              url(../img/bg-back-mobile@1x.jpg) no-repeat center;
-  background-size: 104%, 88%, cover;
-}
-.page-hdr__intro--inner {
-  height: 160px;
-  background: url(../img/bg-intro-triangle-mobile.svg) no-repeat center bottom,
-              url(../img/text-sedona.svg) no-repeat center,
-              url(../img/bg-back-mobile@1x.jpg) no-repeat center;
-  background-size: 104%, 70%, cover;
+
+@media (min-width: @tablet-width) {
+  .page-hdr__logo-img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__close {
+    display: none;
+  }
 }

@@ -3,8 +3,10 @@
   padding: 0;
   list-style: none;
 }
+
 .social-lst__item {
   display: inline-block;
+
   a {
     display: inline-block;
     width: 45px;
@@ -14,9 +16,19 @@
     background: @bg_color-1;
   }
 }
+
 .social-lst__item:last-child {
   a {
     margin-right: 0;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .social-lst {
+    margin: 0;
+  }
+
+  .social-lst__item {
+    line-height: 0;
+  }
+}

@@ -1,41 +1,67 @@
 @import "page-hdr";
 @import "page-main";
 @import "page-ftr";
-@import "advantages";
 @import "figure";
 @import "features";
 @import "remain";
 @import "gallery";
+@import "gallery-figure";
 @import "main-nav";
 @import "menu-lst";
 @import "features-lst";
 @import "remain-lst";
 @import "social-lst";
 
-@font-face     {
+@font-face {
   font-family: "PT Sans";
   src:
-  local("PT Sans"),
-  url("../fonts/ptsans.woff2") format("woff2");
+    local("PT Sans"),
+    url("../fonts/ptsans.woff2") format("woff2");
 }
 
-@font-face     {
+@font-face {
   font-family: "PT Sans Bold";
   src:
-  local("PT Sans Bold"),
-  url("../fonts/ptsansbold.woff2") format("woff2");
+    local("PT Sans Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 @bg_color-1: #81b3d2;
 @bg_color-2: #eee;
 @font_size: 14px;
 @font_bold: "PT Sans Bold";
+@line-height: 1.6;
+@tablet-width: 768px;
+@desktop-width: 1200px;
 
 body {
   width: 320px;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: @font_size;
+  line-height: @line-height;
 }
 
+.title {
+  font-family: @font_bold;
+  font-size: @font_size + 4px;
+  line-height: @line-height - 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    width: 768px;
+  }
+
+  .title {
+    font-size: @font_size + 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1200px;
+  }
+}

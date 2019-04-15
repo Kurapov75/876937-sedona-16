@@ -1,0 +1,73 @@
+.page-main__intro {
+  height: 390px;
+  margin-bottom: 40px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center bottom,
+    url("../img/text-sedona-index.svg") no-repeat center 90px,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: 104%, 88%, cover;
+}
+
+.page-main__intro--inner {
+  height: 160px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center bottom,
+    url("../img/text-sedona.svg") no-repeat center,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-size: 104%, 70%, cover;
+}
+
+.page-main__headline {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.page-main__text {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: @line-height + 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__headline {
+    width: 460px;
+  }
+
+  .page-main__text {
+    width: auto;
+  }
+
+  .page-main__intro {
+    height: 520px;
+    margin-bottom: 50px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center bottom,
+      url("../img/text-sedona-index.svg") no-repeat center 90px,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background-size: 100%, 58%, cover;
+  }
+
+  .page-main__intro--inner {
+    height: 290px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center bottom,
+      url("../img/text-sedona.svg") no-repeat center,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background-size: 100%, 59%, cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__intro {
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center bottom,
+      url("../img/text-sedona-index.svg") no-repeat center 90px,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    background-size: 100%, 38%, cover;
+  }
+
+  .page-main__intro--inner {
+    height: 290px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat center bottom,
+      url("../img/text-sedona.svg") no-repeat center,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    background-size: 100%, 38%, cover;
+  }
+}

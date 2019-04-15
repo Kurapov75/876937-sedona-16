@@ -2,16 +2,49 @@
   padding-top: 37px;
   padding-bottom: 35px;
 }
+
 .page-ftr__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 150px;
   margin: 0 auto;
 }
+
 .page-ftr__link {
   font-family: @font_bold;
   font-size: @font_size + 7px;
 }
+
 .page-ftr__academy-logo {
   position: relative;
   top: 15px;
   left: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-ftr {
+    padding-top: 22px;
+    padding-bottom: 37px;
+  }
+
+  .page-ftr__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+  }
+
+  .page-ftr__link {
+    margin-top: 15px;
+  }
+
+  .page-ftr__academy {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-ftr__wrapper {
+    width: 960px;
+  }
 }
