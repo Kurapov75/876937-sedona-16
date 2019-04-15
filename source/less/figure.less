@@ -3,57 +3,70 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #ffffff;
 }
+
 .figure__content {
   padding-top: 67px;
   padding-bottom: 44px;
-  background: @bg_color-1 url(../img/bg-triangle.svg) no-repeat top center;
+  background: @bg_color-1 url("../img/bg-triangle.svg") no-repeat top center;
 }
+
 .figure__content--option {
   background-image: none;
 }
+
 .figure__headline {
   margin-bottom: 15px;
 }
+
 .figure__text {
   width: 265px;
   margin: 15px auto 15px;
 }
+
 @media (min-width: @tablet-width) {
   .figure {
     flex-direction: row;
     justify-content: space-between;
     height: 255px;
   }
+
   .figure__content {
     width: 256px;
     padding-top: 25px;
     background-image: none;
   }
+
   .figure__img {
     width: 512px;
     height: 255px;
   }
+
   .figure__headline {
     width: 160px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .figure__text {
     width: 165px;
   }
+
   .figure__content--option {
     order: 1;
   }
 }
+
 @media (min-width: @desktop-width) {
   .figure__content {
     width: 400px;
   }
+
   .figure__img {
     width: 800px;
   }
+
   .figure__text {
     width: 285px;
   }
