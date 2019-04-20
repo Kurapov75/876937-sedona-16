@@ -1,19 +1,40 @@
 .social-lst {
-  margin: 27px 0;
+  margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   list-style: none;
 }
 
 .social-lst__item {
   display: inline-block;
+  vertical-align: middle;
 
   a {
     display: inline-block;
+    vertical-align: middle;
     width: 45px;
     height: 45px;
     margin-right: 3px;
+    padding-top: 15px;
     font-size: 0;
     background: @bg_color-1;
+    box-sizing: border-box;
+  }
+
+  a svg {
+    fill: #ffffff;
+  }
+
+  a:hover {
+    background-color: #669ec0;
+  }
+
+  a:active {
+    background-color: #5496bd;
+  }
+
+  a:active svg {
+    fill: #88b6d1;
   }
 }
 
