@@ -13,17 +13,21 @@
 @import "social-lst";
 
 @font-face {
+  font-weight: normal;
   font-family: "PT Sans";
   src:
     local("PT Sans"),
-    url("../fonts/ptsans.woff2") format("woff2");
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
+  font-weight: bold;
   font-family: "PT Sans Bold";
   src:
     local("PT Sans Bold"),
-    url("../fonts/ptsansbold.woff2") format("woff2");
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
 }
 
 @bg_color-1: #81b3d2;
@@ -42,6 +46,22 @@ body {
   text-transform: uppercase;
   font-size: @font_size;
   line-height: @line-height;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .title {

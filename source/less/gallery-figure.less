@@ -1,7 +1,8 @@
 .gallery__figure {
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 20px;
   text-align: left;
+  border-top: 1px solid #eeeeee;
 }
 
 .gallery__img {
@@ -9,27 +10,35 @@
 }
 
 .gallery__title {
-  margin-bottom: 8px;
+  margin-top: 5px;
+  margin-bottom: 2px;
   font-family: @font_bold;
   font-size: @font_size - 1px;
 }
 
 .gallery__author {
-  margin-top: 0;
+  margin: 0;
   text-transform: none;
 }
 
 .gallery__unit {
-  padding-left: 35px;
+  margin-top: 5px;
+  margin-bottom: 0;
   font-family: @font_bold;
+}
+
+.gallery__icon {
+  margin-right: 15px;
+  fill: #b2b2b2;
 }
 
 @media (min-width: @tablet-width) {
   .gallery__figure {
     width: 325px;
-    padding-top: 0;
+    padding: 0;
     padding-bottom: 0;
     background-color: #f2f2f2;
+    border: none;
 
     .gallery__img {
       width: 325px;
@@ -64,8 +73,9 @@
 
   .gallery__unit {
     position: relative;
-    top: -30px;
+    top: -35px;
     margin: 0;
+    margin-bottom: -10px;
     text-align: right;
   }
 }
@@ -100,6 +110,10 @@
   }
 
   .gallery__title {
-    margin-top: 15px;
+    margin-top: 18px;
+  }
+
+  .gallery__icon {
+    fill: #ffffff;
   }
 }
