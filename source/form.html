@@ -18,7 +18,11 @@
           <li class="menu-lst__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </nav>
-      <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
+      </picture>
     </header>
     <main class="page-main">
       <div class="page-main__intro--inner"></div>
