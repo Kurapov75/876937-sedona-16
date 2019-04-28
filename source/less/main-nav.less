@@ -1,5 +1,4 @@
 .main-nav {
-  position: relative;
   display: block;
   width: 100%;
   padding-bottom: 55px;
@@ -14,10 +13,6 @@
   .main-nav__close {
     display: none;
   }
-}
-
-.main-nav--closed + .page-hdr__logo-img {
-  top: 0;
 }
 
 .main-nav__toggle {
@@ -90,10 +85,22 @@
   .main-nav {
     padding: 17px 25px 17px 50px;
   }
+
+  .main-nav--closed {
+    .main-nav__lst {
+      display: flex;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
     padding: 17px 70px 17px 90px;
+  }
+
+  .main-nav--closed {
+    .main-nav__lst {
+      display: flex;
+    }
   }
 }
