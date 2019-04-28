@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Галерея</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,11 +18,13 @@
           <li class="menu-lst__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </nav>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-        <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
-      </picture>
+      <a class="pade-hdr__logo-link">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
+        </picture>
+      </a>
     </header>
     <main class="page-main">
       <div class="page-main__intro--inner"></div>
@@ -138,6 +140,6 @@
         </p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
