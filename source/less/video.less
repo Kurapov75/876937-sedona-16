@@ -1,0 +1,154 @@
+.video {
+  margin-bottom: -15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-top: 1px solid #eeeeee;
+}
+
+.video__headline {
+  margin-bottom: 30px;
+}
+
+.video__text {
+  width: 240px;
+  margin: 14px auto 37px;
+}
+
+.video__controls {
+  position: relative;
+  top: -50px;
+  width: 280px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.controls-progress {
+  height: 45px;
+  background: rgba(00, 00, 00, 0.5);
+}
+
+.controls-progress__line {
+  position: relative;
+  top: 50%;
+  left: 22.5px;
+  width: 235px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+
+.controls-progress__circle {
+  position: absolute;
+  top: 19px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.controls-toggle {
+  display: flex;
+  height: 65px;
+  padding-left: 20px;
+  padding-right: 15px;
+  background: #f2f2f2;
+}
+
+.controls-toggle__button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  svg {
+    fill: #5c6870;
+  }
+}
+
+.controls-toggle__button:first-child {
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-top: 25px;
+    border-top: none;
+  }
+
+  .video__headline.title {
+    font-size: @font_size + 15px;
+  }
+
+  .video__text {
+    width: 420px;
+    margin-bottom: 76px;
+  }
+
+  .video__img {
+    width: 650px;
+    height: 500px;
+  }
+
+  .video__controls {
+    width: 650px;
+    height: 90px;
+    top: -95px;
+    background: rgba(00, 00, 00, 0.5);
+  }
+
+  .controls-progress {
+    height: 90px;
+    background: transparent;
+  }
+
+  .controls-progress__line {
+    width: 390px;
+    left: 93px;
+  }
+
+  .controls-progress__circle {
+    top: 47%;
+    left: 210px;
+  }
+
+  .controls-toggle {
+    height: 0;
+    background: transparent;
+  }
+
+  .controls-toggle__button {
+    position: absolute;
+    top: 35px;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  .controls-toggle__button:first-child {
+    left: 30px;
+  }
+
+  .controls-toggle__button:last-child {
+    right: 35px;
+  }
+
+  .controls-toggle__button:nth-child(2) {
+    right: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__img {
+    width: 800px;
+  }
+
+  .video__controls {
+    width: 800px;
+  }
+
+  .controls-progress__line {
+    width: 540px;
+  }
+}

@@ -15,17 +15,105 @@
           <li class="menu-lst__item"><a href="index.html">Главная</a></li>
           <li class="menu-lst__item"><a href="photo.html">Фото и видео</a></li>
           <li class="menu-lst__item menu-lst__item--current"><a>Форма отзыва</a></li>
-          <li class="menu-lst__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+          <li class="menu-lst__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-        <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
-      </picture>
+      <a class="pade-hdr__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-hdr__logo-img" src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Символика города">
+        </picture>
+      </a>
     </header>
     <main class="page-main">
       <div class="page-main__intro--inner"></div>
+      <section class="form">
+        <h2 class="form__headline title">Оставьте свой отзыв</h2>
+        <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <form id="review" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form__wrapper">
+            <div class="form-section">
+              <h3 class="form-section__title title">Представьтесь:</h3>
+              <p class="form-section__option">
+                <label for="name-field">Имя*:</label>
+                <input type="text" name="name" id="name-field" required placeholder="Петр" onfocus="placeholder='';" onblur="placeholder='Петр';">
+              </p>
+              <p class="form-section__option">
+                <label for="family-field">Фамилия*:</label>
+                <input type="text" name="family" id="family-field" required placeholder="Иванов" onfocus="placeholder='';" onblur="placeholder='Иванов';">
+              </p>
+              <p class="form-section__option">
+                <label for="name2-field">Отчество:</label>
+                <input type="text" name="name" id="name2-field" placeholder="Александрович" onfocus="placeholder='';" onblur="placeholder='Александрович';">
+              </p>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__title title">Контактная информация:</h3>
+              <p class="form-section__option">
+                <label for="tel-field"><span class="hidden">Контактный</span> телефон*:</label>
+                <input type="tel" name="tel" id="tel-field" required placeholder="Введите телефон" onfocus="placeholder='';" onblur="placeholder='Введите телефон';"><span></span>
+              </p>
+              <p class="form-section__option">
+                <label for="email-field">Электронная почта*:</label>
+                <input type="email" name="email" id="email-field" required placeholder="Введите e-mail" onfocus="placeholder='';" onblur="placeholder='Введите e-mail';"><span></span>
+              </p>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__title title">Ваше общее впечатление:</h3>
+              <p class="form-section__option">
+                <input type="radio" name="impress" id="plus" value="impress-plus" hidden checked>
+                <label for="plus">Скорее положительное</label>
+              </p>
+              <p class="form-section__option">
+                <input type="radio" name="impress" id="minus" value="impress-minus" hidden>
+                <label for="minus">Скорее отрицательное</label>
+              </p>
+              <p class="form-section__option">
+                <input type="radio" name="impress" id="problem" value="impress-problem" hidden>
+                <label for="problem">Затрудняюсь ответить</label>
+              </p>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__title title">Посещенные достопримечательности:</h3>
+              <p class="form-section__option">
+                <input type="checkbox" name="bridge" id="bridge" hidden checked>
+                <label for="bridge">Мост Дьявола</label>
+              </p>
+              <p class="form-section__option">
+                <input type="checkbox" name="mount" id="mount" hidden checked>
+                <label for="mount">Гора-Колокол</label>
+              </p>
+              <p class="form-section__option">
+                <input type="checkbox" name="park" id="park" hidden checked>
+                <label for="park">Слайд-парк</label>
+              </p>
+              <p class="form-section__option">
+                <input type="checkbox" name="rock" id="rock" hidden>
+                <label for="rock">Красные скалы</label>
+              </p>
+            </div>
+            <div class="form-section">
+              <h3 class="form-section__title title">Опишите свои эмоции:</h3>
+              <p class="form-section__option">
+                <textarea class="form-section__message" name="message" id="message-field" placeholder="Опишите подробно все свои восторги" onfocus="placeholder='';" onblur="placeholder='Опишите подробно все свои восторги';"></textarea>
+              </p>
+            </div>
+            </div>
+            <input type="submit" value="Отправить отзыв">
+          </form>
+          <p class="form__note">* — обязательные поля</p>
+      </section>
+      <div class="modal-error visually-hidden">
+        <h3 class="modal-error__headline title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__close">Ок</button>
+      </div>
+      <div class="modal-confirm visually-hidden">
+        <h3 class="modal-confirm__headline title">Ваш отзыв отправлен!</h3>
+        <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal-confirm__close">Закрыть окно</button>
+      </div>
     </main>
     <footer class="page-ftr">
       <div class="page-ftr__wrapper">
@@ -54,7 +142,7 @@
           </li>
         </ul>
         <p class="page-ftr__academy">Разработано
-          <a href="https://htmlacademy.ru" aria-label="HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             <svg class="page-ftr__academy-logo" width="26.943px" height="34.09px">
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>
@@ -63,5 +151,6 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
