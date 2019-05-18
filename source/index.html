@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-hdr">
@@ -51,21 +53,21 @@
           <ul class="features__lst features-lst">
             <li class="features-lst__item">
               <svg class="features-lst__icon" width="63px" height="75.084px">
-                <use xlink:href="img/sprite.svg#house"></use>
+                <use xlink:href="img/sprite.svg#icon-house"></use>
               </svg>
               <h3 class="features__title title">Жилье</h3>
               <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features-lst__item">
-              <svg class="features-lst__icon" width="63px" height="75.084px">
-                <use xlink:href="img/sprite.svg#souvenir"></use>
+              <svg class="features-lst__icon" width="40px" height="75.084px">
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
               </svg>
               <h3 class="features__title title">Сувениры</h3>
               <p class="features__text">Не только китайского, но и местного производства!</p>
             </li>
             <li class="features-lst__item">
               <svg class="features-lst__icon" width="76.166px" height="68.959px">
-                <use xlink:href="img/sprite.svg#burger"></use>
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
               </svg>
               <h3 class="features__title title">Еда</h3>
               <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -128,7 +130,7 @@
             <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
           </svg>
         </div>
-        <iframe class="search__map search__map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916868.1234420368!2d-112.34026068934878!3d34.596781579436126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1556405097738!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="search__map search__map--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916868.1234420368!2d-112.34026068934878!3d34.596781579436126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1556405097738!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-ftr">
@@ -138,21 +140,21 @@
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Твиттере">
               <svg width="17.5px" height="14.663px">
-                <use xlink:href="img/sprite.svg#twit"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Фейсбуке">
               <svg width="8.672px" height="18.944px">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Ютубе">
               <svg width="19.979px" height="14.015px">
-                <use xlink:href="img/sprite.svg#ytube"></use>
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>

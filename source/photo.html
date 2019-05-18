@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Галерея</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-hdr">
@@ -48,7 +50,7 @@
               <p class="gallery__author">Автор фото: Борис</p>
               <p class="gallery__unit">
                 <svg class="gallery__icon" width="22px" height="20px">
-                  <use xlink:href="img/sprite.svg#hand"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>1350
               </p>
             </figcaption>
@@ -69,7 +71,7 @@
               <p class="gallery__author">Автор фото: Сергей</p>
               <p class="gallery__unit">
                 <svg class="gallery__icon" width="22px" height="20px">
-                  <use xlink:href="img/sprite.svg#hand"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>143
               </p>
             </figcaption>
@@ -90,7 +92,7 @@
               <p class="gallery__author">Автор фото: Петр</p>
               <p class="gallery__unit">
                 <svg class="gallery__icon" width="22px" height="20px">
-                  <use xlink:href="img/sprite.svg#hand"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>96
               </p>
             </figcaption>
@@ -111,7 +113,7 @@
               <p class="gallery__author">Автор фото: Антон</p>
               <p class="gallery__unit">
                 <svg class="gallery__icon" width="22px" height="20px">
-                  <use xlink:href="img/sprite.svg#hand"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>254
               </p>
             </figcaption>
@@ -138,17 +140,17 @@
             <div class="controls-toggle">
               <button class="controls-toggle__button">
                 <svg width="16" height="20">
-                  <use xlink:href="img/sprite.svg#replay"></use>
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
                 </svg>
               </button>
               <button class="controls-toggle__button">
                 <svg width="32" height="20">
-                  <use xlink:href="img/sprite.svg#subtitles"></use>
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
                 </svg>
               </button>
               <button class="controls-toggle__button">
                 <svg width="20" height="20">
-                  <use xlink:href="img/sprite.svg#fullscreen"></use>
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
                 </svg>
               </button>
             </div>
@@ -163,21 +165,21 @@
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Твиттере">
               <svg width="17.5px" height="14.663px">
-                <use xlink:href="img/sprite.svg#twit"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Фейсбуке">
               <svg width="8.672px" height="18.944px">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Ютубе">
               <svg width="19.979px" height="14.015px">
-                <use xlink:href="img/sprite.svg#ytube"></use>
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>

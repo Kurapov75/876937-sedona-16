@@ -157,14 +157,19 @@ input[type="checkbox"] + label::before {
   position: absolute;
   top: -13px;
   left: 0;
-  width: 56px;
-  height: 56px;
+  width: 46px;
+  height: 46px;
   background-color: #f2f2f2;
+  border: 5px solid transparent;
   border-radius: 10%;
 }
 
 input[type="checkbox"]:checked + label::before {
   background: #f2f2f2 url("../img/icon-tick.svg") no-repeat center;
+}
+
+input[type="checkbox"]:focus + label::before {
+  border: 5px solid #e5e5e5;
 }
 
 .form-section__message {
