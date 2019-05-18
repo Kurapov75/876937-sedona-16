@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Форма отзыва</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -62,34 +64,34 @@
             <div class="form-section">
               <h3 class="form-section__title title">Ваше общее впечатление:</h3>
               <p class="form-section__option">
-                <input type="radio" name="impress" id="plus" value="impress-plus" hidden checked>
+                <input class="visually-hidden" type="radio" name="impress" id="plus" value="impress-plus" checked>
                 <label for="plus">Скорее положительное</label>
               </p>
               <p class="form-section__option">
-                <input type="radio" name="impress" id="minus" value="impress-minus" hidden>
+                <input class="visually-hidden" type="radio" name="impress" id="minus" value="impress-minus">
                 <label for="minus">Скорее отрицательное</label>
               </p>
               <p class="form-section__option">
-                <input type="radio" name="impress" id="problem" value="impress-problem" hidden>
+                <input class="visually-hidden" type="radio" name="impress" id="problem" value="impress-problem">
                 <label for="problem">Затрудняюсь ответить</label>
               </p>
             </div>
             <div class="form-section">
               <h3 class="form-section__title title">Посещенные достопримечательности:</h3>
               <p class="form-section__option">
-                <input type="checkbox" name="bridge" id="bridge" hidden checked>
+                <input class="visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
                 <label for="bridge">Мост Дьявола</label>
               </p>
               <p class="form-section__option">
-                <input type="checkbox" name="mount" id="mount" hidden checked>
+                <input class="visually-hidden" type="checkbox" name="mount" id="mount" checked>
                 <label for="mount">Гора-Колокол</label>
               </p>
               <p class="form-section__option">
-                <input type="checkbox" name="park" id="park" hidden checked>
+                <input class="visually-hidden" type="checkbox" name="park" id="park" checked>
                 <label for="park">Слайд-парк</label>
               </p>
               <p class="form-section__option">
-                <input type="checkbox" name="rock" id="rock" hidden>
+                <input class="visually-hidden" type="checkbox" name="rock" id="rock">
                 <label for="rock">Красные скалы</label>
               </p>
             </div>
@@ -122,21 +124,21 @@
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Твиттере">
               <svg width="17.5px" height="14.663px">
-                <use xlink:href="img/sprite.svg#twit"></use>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Фейсбуке">
               <svg width="8.672px" height="18.944px">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-lst__item">
             <a href="#" target="_blank" aria-label="Мы в Ютубе">
               <svg width="19.979px" height="14.015px">
-                <use xlink:href="img/sprite.svg#ytube"></use>
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
