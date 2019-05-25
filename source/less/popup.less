@@ -1,0 +1,140 @@
+.modal-error {
+  display: none;
+}
+
+.modal-confirm {
+  display: none;
+}
+
+.modal-error--show {
+  display: block;
+  width: 320px;
+  height: 280px;
+  position: fixed;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 35px 50px;
+  background: #ffffff;
+  box-sizing: border-box;
+  animation: scale 0.3s;
+  box-shadow: 0 10px 15px -10px #000;
+  z-index: 1000;
+}
+
+.modal-confirm--show {
+  display: block;
+  width: 320px;
+  height: 280px;
+  position: fixed;
+  bottom: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 35px 20px;
+  background: #ffffff;
+  box-sizing: border-box;
+  animation: scale 0.3s;
+  box-shadow: 0 10px 15px -10px #000;
+  z-index: 1000;
+}
+
+.modal-error__close {
+  margin-top: 10px;
+  padding: 15px 70px;
+  font-family: @font_bold;
+  font-size: @font_size + 7px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @bg_color-1;
+  border: none;
+}
+
+.modal-confirm__close {
+  margin-top: 10px;
+  padding: 15px 70px;
+  font-family: @font_bold;
+  font-size: @font_size + 4px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @bg_color-1;
+  border: none;
+}
+
+.modal-error__close:hover,
+.modal-error__close:focus {
+  background-color: #669ec0;
+}
+
+.modal-error__close:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.modal-confirm__close:hover,
+.modal-confirm__close:focus {
+  background-color: #669ec0;
+}
+
+.modal-confirm__close:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.modal-error__headline {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.modal-confirm__headline {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-error--show {
+    width: 400px;
+    height: 350px;
+    padding: 40px 50px;
+    bottom: 37vh;
+  }
+
+  .modal-confirm--show {
+    width: 640px;
+    height: 350px;
+    padding: 60px 90px 20px 90px;
+  }
+
+  .modal-error__headline.title {
+    width: 225px;
+    margin: 20px auto;
+    font-size: @font_size + 16.5px;
+  }
+
+  .modal-error__text {
+    margin-top: 27px;
+    margin-bottom: 27px;
+  }
+
+  .modal-confirm__headline.title {
+    font-size: @font_size + 16.5px;
+  }
+
+  .modal-error__close {
+    padding: 15px 120px;
+  }
+
+  .modal-confirm__close {
+    margin-top: 55px;
+    padding: 15px 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-error--show {
+    bottom: 25vh;
+  }
+
+}

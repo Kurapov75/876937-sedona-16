@@ -33,32 +33,32 @@
       <section class="form">
         <h2 class="form__headline title">Оставьте свой отзыв</h2>
         <p class="form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          <form id="review" action="https://echo.htmlacademy.ru" method="POST">
+          <form id="review" action="#" method="POST">
             <div class="form__wrapper">
             <div class="form-section">
               <h3 class="form-section__title title">Представьтесь:</h3>
               <p class="form-section__option">
                 <label for="name-field">Имя*:</label>
-                <input type="text" name="name" id="name-field" required placeholder="Петр" onfocus="placeholder='';" onblur="placeholder='Петр';">
+                <input type="text" class="first" name="first-name" id="name-field" placeholder="Петр" onfocus="placeholder='';" onblur="placeholder='Петр';">
               </p>
               <p class="form-section__option">
                 <label for="family-field">Фамилия*:</label>
-                <input type="text" name="family" id="family-field" required placeholder="Иванов" onfocus="placeholder='';" onblur="placeholder='Иванов';">
+                <input type="text" name="second-name" id="family-field" placeholder="Иванов" onfocus="placeholder='';" onblur="placeholder='Иванов';">
               </p>
               <p class="form-section__option">
                 <label for="name2-field">Отчество:</label>
-                <input type="text" name="name" id="name2-field" placeholder="Александрович" onfocus="placeholder='';" onblur="placeholder='Александрович';">
+                <input type="text" name="third-name" id="name2-field" placeholder="Александрович" onfocus="placeholder='';" onblur="placeholder='Александрович';">
               </p>
             </div>
             <div class="form-section">
               <h3 class="form-section__title title">Контактная информация:</h3>
               <p class="form-section__option">
                 <label for="tel-field"><span class="hidden">Контактный</span> телефон*:</label>
-                <input type="tel" name="tel" id="tel-field" required placeholder="Введите телефон" onfocus="placeholder='';" onblur="placeholder='Введите телефон';"><span></span>
+                <input type="tel" name="tel" id="tel-field" placeholder="Введите телефон" onfocus="placeholder='';" onblur="placeholder='Введите телефон';"><span></span>
               </p>
               <p class="form-section__option">
                 <label for="email-field">Электронная почта*:</label>
-                <input type="email" name="email" id="email-field" required placeholder="Введите e-mail" onfocus="placeholder='';" onblur="placeholder='Введите e-mail';"><span></span>
+                <input type="email" name="email" id="email-field" placeholder="Введите e-mail" onfocus="placeholder='';" onblur="placeholder='Введите e-mail';"><span></span>
               </p>
             </div>
             <div class="form-section">
@@ -106,15 +106,17 @@
           </form>
           <p class="form__note">* — обязательные поля</p>
       </section>
-      <div class="modal-error visually-hidden">
-        <h3 class="modal-error__headline title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
-        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-error__close">Ок</button>
-      </div>
-      <div class="modal-confirm visually-hidden">
-        <h3 class="modal-confirm__headline title">Ваш отзыв отправлен!</h3>
-        <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-confirm__close">Закрыть окно</button>
+      <div class="popup">
+        <div class="popup__modal-error modal-error">
+          <h3 class="modal-error__headline title">ЧТО-ТО ПОШЛО НЕ ТАК!</h3>
+          <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-error__close">Ок</button>
+        </div>
+        <div class="popup__modal-confirm modal-confirm">
+          <h3 class="modal-confirm__headline title">Ваш отзыв отправлен!</h3>
+          <p class="modal-confirm__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="modal-confirm__close">Закрыть окно</button>
+        </div>
       </div>
     </main>
     <footer class="page-ftr">
@@ -152,7 +154,7 @@
         </p>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
     <script src="js/popup.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
