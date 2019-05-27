@@ -1,3 +1,4 @@
+@import "general";
 @import "page-hdr";
 @import "page-main";
 @import "page-ftr";
@@ -45,49 +46,3 @@
 @desktop-width: 1200px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
-
-body {
-  width: 320px;
-  margin: 0 auto;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: @font_size;
-  line-height: @line-height;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.title {
-  font-family: @font_bold;
-  font-size: @font_size + 4px;
-  line-height: @line-height - 0.3;
-}
-
-@media (min-width: @tablet-width) {
-  body {
-    width: 768px;
-  }
-
-  .title {
-    font-size: @font_size + 8px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: 1200px;
-  }
-}
