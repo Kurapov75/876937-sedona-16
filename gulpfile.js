@@ -94,5 +94,5 @@ gulp.task("refresh", function (done) {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "html", "css", "sprite"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "images", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));
